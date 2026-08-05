@@ -215,7 +215,7 @@
 	)
 );
 
-// User settings
+// User settings, sorted by section
 @include -gen-icons(
 	"data-list-item-id",
 	(
@@ -228,25 +228,21 @@
 		"settings-sidebar___vencord_backup_restore_panel": "history-undo",
 
 		"settings-sidebar___account_panel": "person",
-		"settings-sidebar___connections_panel": "phonelink",
-		"settings-sidebar___content_and_social_panel": "shield-full",
 		"settings-sidebar___data_and_privacy_panel": "screen-privacy4",
-		"settings-sidebar___developer_options_panel": "build",
-		"settings-sidebar___experiments_panel": "test",
-		"settings-sidebar___family_center_panel": "eye-open-negative-filled",
+		"settings-sidebar___messaging_permissions_panel": "mail-unread",
 		"settings-sidebar___notifications_panel": "bell-outline",
-		"settings-sidebar___sessions_panel": "smartphone",
 
 		"settings-sidebar___voice_and_video_panel": "microphone",
 		"settings-sidebar___appearance_panel": "brush-monitor",
 		"settings-sidebar___accessibility_panel": "body",
-		"settings-sidebar___keybinds_panel": "keyboard3",
+		"settings-sidebar___system_panel": "keyboard3",
 		"settings-sidebar___language_and_time_panel": "translate",
 
 		"settings-sidebar___activity_privacy_panel": "screen-privacy4",
-		"settings-sidebar___authorized_apps_panel": "grid-large",
+		"settings-sidebar___connected_apps_panel": "grid-large",
 
 		"settings-sidebar___developer_panel": "build-alt",
+		"settings-sidebar___experiments_panel": "test",
 		"settings-sidebar___logout_sidebar_item": "system-log-out",
 	)
 );

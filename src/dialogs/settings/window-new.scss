@@ -72,6 +72,7 @@
 .sidebar__409aa {
 	background-color: var(--sidebar_bg_color);
 	border-inline-end: 1px solid var(--sidebar_border_color);
+	flex-basis: 250px;
 	padding: 0;
 
 	.fixedContent__409aa {
@@ -143,10 +144,6 @@
 
 	.itemContent_caf372 {
 		gap: var(--spacing-2x);
-	}
-
-	.nav__409aa {
-		gap: var(--menu_margin);
 	}
 
 	.navScroller__409aa {
