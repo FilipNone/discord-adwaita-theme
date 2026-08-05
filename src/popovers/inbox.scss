@@ -25,11 +25,11 @@
 	padding: 10px 16px;
 }
 
-.container__9497c {
+.container__8cb2e {
 	@include dialog.container;
 }
 
-.controls_ab6641 {
+.controls__06f80 {
 	// for the ONLY mana icon button there
 	--icon: icon("funnel");
 
@@ -44,7 +44,7 @@
 	--icon: icon("person");
 }
 
-.header_ab6641 {
+.header__06f80 {
 	@include dialog.header;
 
 	display: flex;
@@ -53,7 +53,7 @@
 	justify-content: space-between;
 }
 
-.headerTabs_ab6641 {
+.headerTabs__06f80 {
 	margin: 0;
 	width: 100%;
 
@@ -71,7 +71,7 @@
 }
 
 .chevron__996b5,
-.inboxIcon_ab6641,
-.inboxTitle_ab6641 {
+.inboxIcon__06f80,
+.inboxTitle__06f80 {
 	display: none;
 }
