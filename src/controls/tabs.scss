@@ -28,6 +28,10 @@
 	&::after {
 		display: none;
 	}
+
+	& > [data-text-variant] {
+		color: inherit;
+	}
 }
 
 [role="tablist"][aria-orientation="horizontal"] {
