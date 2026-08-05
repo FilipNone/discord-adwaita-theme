@@ -171,38 +171,23 @@
 
 .search_c322aa {
 	&:not(.open_c322aa) {
-		.DraftEditor-root {
+		.editor__25bec {
 			padding: 0;
 			width: 0;
 		}
 	}
 
-	.DraftEditor-editorContainer {
-		height: unset;
-	}
-
-	.DraftEditor-root {
+	.editor__25bec {
 		@include controls.text-field;
-
-		font-weight: normal;
 
 		position: absolute;
 		inset-inline-start: calc(var(--icon-button-size) + var(--spacing));
 		width: 250px;
-	}
 
-	.public-DraftEditor-content {
-		// genius d*scord is using this to hide the scrollbar
-		padding-block: 0;
-
-		&::-webkit-scrollbar {
-			display: none;
+		[data-slate-placeholder] {
+			margin-block: 1px -1px;
+			padding: 0;
 		}
-	}
-
-	.public-DraftEditorPlaceholder-root {
-		margin-block: 1px -1px;
-		padding: 0;
 	}
 
 	.searchToken_bd8186 {
@@ -211,6 +196,7 @@
 		background-color: color-mix(in srgb, currentColor 20%, transparent);
 		border: none;
 		border-radius: 0;
+		inset: 0;
 		padding-block: 0;
 
 		height: unset;
