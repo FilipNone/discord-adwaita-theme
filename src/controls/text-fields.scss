@@ -1,7 +1,7 @@
 @use "controls";
 @use "util";
 
-.container__0f084 {
+.container__75098 {
 	@include controls.text-field;
 
 	gap: 0;
@@ -24,15 +24,15 @@
 	line-height: 1.25;
 }
 
-.icon__0f084 {
-	&:not(.button__0f084) {
+.icon__75098 {
+	&:not(.button__75098) {
 		@include util.icon("loupe-large");
 
 		border: none;
 		margin-inline-start: 9px;
 	}
 
-	&.button__0f084 {
+	&.button__75098 {
 		@include controls.icon-button("window-close");
 	}
 }
