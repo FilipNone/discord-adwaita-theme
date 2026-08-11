@@ -59,7 +59,7 @@ html {
 	@extend %title-3;
 }
 
-.anchor_edefb8 {
+:where(.anchor_edefb8) {
 	@extend %link;
 
 	opacity: 1;

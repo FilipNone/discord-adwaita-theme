@@ -132,3 +132,7 @@
 	color: var(--window_fg_muted);
 	font-size: var(--document-font-size);
 }
+
+.vc-text-lg {
+	@extend %title-3;
+}
