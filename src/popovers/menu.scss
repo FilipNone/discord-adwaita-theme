@@ -35,7 +35,6 @@
 	margin-inline: -2px var(--spacing);
 
 	position: unset;
-	order: -1;
 
 	.checkboxIndicator__714a9 {
 		display: none;
@@ -59,9 +58,8 @@
 		color: var(--popover_fg_color);
 	}
 
-	&[aria-expanded] .iconContainerLeft_c1e9c4,
 	.vc-icon,
-	.icon_c1e9c4 {
+	.iconContainerLeft_c1e9c4 {
 		display: none;
 	}
 
@@ -91,6 +89,11 @@
 	&:only-child {
 		margin-inline-start: calc(var(--spacing) + popover.$icon-size - 2px);
 	}
+
+	[data-text-variant] {
+		color: inherit;
+		font: inherit;
+	}
 }
 
 .menu_c1e9c4 {
@@ -103,6 +106,10 @@
 	padding: var(--menu_margin);
 
 	overflow: auto;
+}
+
+.scrollerWithScrollbar_c1e9c4 {
+	padding-inline-end: 0;
 }
 
 .separator_c1e9c4 {
