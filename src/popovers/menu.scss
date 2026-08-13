@@ -7,10 +7,8 @@
 	@include util.icon("right");
 
 	color: var(--window_fg_muted);
-	margin: 2px;
-
-	position: absolute;
-	right: var(--menu_padding);
+	inset-inline-start: unset;
+	inset-inline-end: var(--menu_padding);
 
 	path {
 		display: none;
@@ -32,9 +30,10 @@
 }
 
 .iconContainer_c1e9c4 {
-	margin-inline: -2px var(--spacing);
-
-	position: unset;
+	:where(& > *) {
+		inset-inline-start: var(--menu_padding);
+		position: absolute;
+	}
 
 	.checkboxIndicator__714a9 {
 		display: none;
@@ -53,6 +52,8 @@
 
 .item_c1e9c4 {
 	@include popover.entry($hover: ".focused_c1e9c4");
+
+	position: relative;
 
 	&:not(.colorDanger_c1e9c4):active {
 		color: var(--popover_fg_color);
@@ -84,16 +85,16 @@
 
 .label_c1e9c4 {
 	color: inherit;
-	margin-inline-end: var(--spacing);
-
-	&:only-child {
-		margin-inline-start: calc(var(--spacing) + popover.$icon-size - 2px);
-	}
+	margin-inline-start: calc(var(--spacing) + popover.$icon-size - 2px);
 
 	[data-text-variant] {
 		color: inherit;
 		font: inherit;
 	}
+}
+
+.labelContainer_c1e9c4 {
+	min-height: unset;
 }
 
 .menu_c1e9c4 {

@@ -53,6 +53,17 @@
 	}
 }
 
+.statusPickerModalMenu_ce8328 {
+	.label_c1e9c4 {
+		margin: 0;
+	}
+
+	// why the fuck is this in the same component as menu
+	.statusAccessory_c1e9c4 {
+		margin-inline-start: -2px;
+	}
+}
+
 .menuItem_ce8328 {
 	--icon: icon("right");
 
@@ -93,6 +104,7 @@
 
 .menuItemContent_ce8328 {
 	flex-direction: row-reverse;
+	padding: 0;
 }
 
 .menuItemIcon_ce8328 {
