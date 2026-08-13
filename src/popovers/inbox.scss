@@ -1,12 +1,12 @@
 @use "controls";
 @use "dialog";
 
-.box_a86e6c {
+.box__376cb {
 	@include controls.card;
 
 	padding: 0;
 
-	.singleMessage_a86e6c {
+	.singleMessage__376cb {
 		// Probably enough to align it, didn't check lol
 		margin: 0 4px;
 		padding-block: calc(
@@ -15,11 +15,11 @@
 	}
 }
 
-.buttonGroup__996b5 {
+.buttonGroup__5d903 {
 	gap: var(--spacing);
 }
 
-.channelHeader__996b5 {
+.channelHeader__5d903 {
 	border-block-end: 1px solid var(--card_shade_color);
 	gap: var(--spacing);
 	padding: 10px 16px;
@@ -66,11 +66,11 @@
 	}
 }
 
-.icon__996b5 {
+.icon__5d903 {
 	border-radius: 50%;
 }
 
-.chevron__996b5,
+.chevron__5d903,
 .inboxIcon__06f80,
 .inboxTitle__06f80 {
 	display: none;
