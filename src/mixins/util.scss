@@ -23,22 +23,12 @@
 	}
 }
 
+// Icons intentionally use Discord's native glyphs. This mixin is kept as a
+// no-op hook so existing call sites compile, but no longer masks a custom icon.
 @mixin icon($name: null, $size: null) {
-	@if $name {
-		--icon: icon(#{$name});
-	}
 	@if $size {
 		--icon-size: #{$size};
 	}
-
-	background-color: currentColor;
-	mask: var(--icon);
-	mask-position: center;
-	mask-repeat: no-repeat;
-	mask-size: var(--icon-size);
-
-	width: var(--icon-size);
-	height: var(--icon-size);
 }
 
 @mixin inactive-dim {

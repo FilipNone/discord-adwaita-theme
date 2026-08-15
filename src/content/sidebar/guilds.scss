@@ -5,14 +5,6 @@
 
 	color: inherit;
 	border-radius: 50%;
-
-	&[data-list-item-id="guildsnav___create-join-button"] {
-		--icon: icon("plus");
-	}
-
-	&[data-list-item-id="guildsnav___guild-discover-button"] {
-		--icon: icon("loupe-large");
-	}
 }
 
 .guilds__5e434 {

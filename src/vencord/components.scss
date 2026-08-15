@@ -1,6 +1,5 @@
 @use "controls";
 @use "typography";
-@use "util";
 
 :where(.vc-btn-base) {
 	@include controls.button;
@@ -91,29 +90,6 @@
 
 	// h4
 	letter-spacing: 0;
-}
-
-.vc-icon {
-	@include util.icon;
-
-	$-icons: (
-		cog-wheel: "settings",
-		folder-icon: "folder",
-		info-icon: "info-outline",
-		log-icon: "info-outline",
-		paintbrush-icon: "edit",
-		restart-icon: "update",
-	);
-
-	@each $k, $v in $-icons {
-		&.vc-#{$k} {
-			--icon: icon(#{$v});
-		}
-	}
-
-	* {
-		display: none;
-	}
 }
 
 .vc-switch-container {

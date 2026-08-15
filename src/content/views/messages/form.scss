@@ -64,8 +64,6 @@
 	);
 
 	.attachButton__0923f {
-		--icon: icon("plus-circle-outline");
-
 		// align with cozy mode avatars, à la discord
 		margin-left: var(--attach-button-left-offset);
 		margin-right: var(--spacing);
@@ -77,7 +75,7 @@
 	}
 
 	.button_e6e74f {
-		@include controls.icon-button($name: "grid-large");
+		@include controls.icon-button;
 
 		margin-left: var(--spacing);
 	}

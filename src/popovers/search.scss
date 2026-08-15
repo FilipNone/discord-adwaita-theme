@@ -1,7 +1,6 @@
 @use "controls";
 @use "popover";
 @use "typography";
-@use "util";
 
 .clearSearchHistory__971b5 {
 	@include controls.icon-button("user-trash", "32px");

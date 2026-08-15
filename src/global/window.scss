@@ -1,5 +1,3 @@
-@use "controls";
-
 * {
 	box-sizing: border-box;
 }
@@ -46,75 +44,4 @@
 #app-mount {
 	// wtf discord
 	color: var(--window_fg_color);
-}
-
-.bar_c38106 {
-	background: none;
-	color: var(--headerbar_fg_color);
-	padding: 0;
-
-	position: fixed;
-	top: var(--spacing);
-	right: var(--spacing);
-	z-index: 101;
-	height: unset;
-
-	&.systemBar_c38106 {
-		display: none;
-	}
-
-	// Visible app banner
-	&:nth-last-child(3) {
-		margin-top: calc(var(--icon-button-size) + var(--spacing-2x));
-	}
-}
-
-// An invisible element that increases the parent's width, amazing
-.leading_c38106 {
-	& > div > span {
-		display: none;
-	}
-}
-
-.title_c38106 {
-	display: none;
-}
-
-.trailing_c38106 {
-	gap: var(--spacing);
-
-	[aria-label="Update Ready!"],
-	[href="https://support.discord.com"]
-	{
-		display: none;
-	}
-}
-
-.winButton_c38106 {
-	@include controls.titlebar-button;
-}
-
-.winButtons_c38106 {
-	color: inherit;
-	gap: var(--titlebar-button-spacing);
-
-	&::before {
-		display: none;
-	}
-}
-
-.winButtonClose_c38106 {
-	color: inherit;
-
-	display: var(--titlebar-close-button);
-}
-
-.winButtonMinMax_c38106 {
-	--icon: icon("window-maximize");
-	display: var(--titlebar-maximize-button);
-
-	&:first-child {
-		--icon: icon("window-minimize");
-		display: var(--titlebar-minimize-button);
-	}
 }

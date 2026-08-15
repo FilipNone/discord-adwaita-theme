@@ -1,6 +1,5 @@
 @use "controls";
 @use "typography";
-@use "util";
 
 .vcd-screen-picker-card:not(.vcd-screen-picker-preview) {
 	@include controls.cards-container;

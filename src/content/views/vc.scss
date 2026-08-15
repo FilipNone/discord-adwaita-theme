@@ -43,13 +43,6 @@
 	&.redGlow_f1ceac {
 		color: var(--destructive-color);
 	}
-
-	&:not([aria-label]) {
-		// Assume soundboard button, since it doesn't have an aria-label, and
-		// pulls out the expression picker on hover instead of displaying a
-		// tooltip, fucking genius design
-		--icon: icon("bullhorn");
-	}
 }
 
 .attachedCaretButtonContainer_f1ceac {
@@ -132,11 +125,7 @@
 
 // the *actual* volume button
 .volumeButton__2d263 {
-	@include controls.icon-button-circular($name: "speaker-3");
-
-	&:has(.controlIcon_f1ceac > :only-child) {
-		--icon: icon("speaker-0");
-	}
+	@include controls.icon-button-circular;
 }
 
 .wrapper__1405b {

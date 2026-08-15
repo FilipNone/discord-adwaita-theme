@@ -47,14 +47,6 @@
 	}
 }
 
-.vc-settings-modal-favorite-button {
-	--icon: icon("star-outline-rounded");
-}
-
-.vc-settings-modal-favorite-button-active {
-	--icon: icon("star-large");
-}
-
 .vc-plugin-modal-header {
 	align-items: center;
 	box-shadow: var(--elevation-low);
@@ -86,16 +78,6 @@
 
 .vc-settings-modal-link-icon {
 	border: none;
-}
-
-.vc-settings-modal-link-button {
-	&[aria-label="View more info"] {
-		--icon: icon("info-outline");
-	}
-
-	&[aria-label="View source code"] {
-		--icon: icon("code");
-	}
 }
 
 .vc-settings-modal-links {

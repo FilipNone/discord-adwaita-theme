@@ -1,2 +1,9 @@
 dist
 node_modules
+docs
+.agents
+.github
+AGENTS.md
+ROADMAP.md
+SPEC.md
+TASKS.md

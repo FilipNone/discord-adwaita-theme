@@ -1,6 +1,5 @@
 @use "popover";
 @use "typography";
-@use "util";
 
 .caughtUpContainer_ea5470 {
 	display: none;
@@ -57,16 +56,10 @@
 }
 
 .messagesGroupHeaderWrap__0aee3 {
-	--icon: icon("pan-down");
-
 	padding: var(--spacing);
 	margin-top: var(--spacing);
 
 	height: unset;
-
-	&.collapsed__0aee3 {
-		--icon: icon("pan-up");
-	}
 
 	&:not(:hover) {
 		color: var(--window_fg_muted);
@@ -80,13 +73,7 @@
 	}
 
 	.chevron__0aee3 {
-		@include util.icon;
-
 		transform: none;
-
-		path {
-			display: none;
-		}
 	}
 
 	.messagesGroupHeader__0aee3 {

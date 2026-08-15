@@ -63,25 +63,12 @@
 		margin: 0;
 
 		flex-shrink: 0;
-
-		&.button__201d5 {
-			--icon: icon("view-fullscreen");
-		}
-
-		&[aria-label="Pause"] {
-			--icon: icon("pause");
-		}
 	}
 
 	.volumeButton__2d263 {
 		@include -media-button($osd, $name: "speaker-3");
 
 		color: inherit;
-
-		// No other way to identify state as of writing this
-		&:has(.controlIcon_cf09d8 > [d$="1.4Z"]) {
-			--icon: icon("speaker-0");
-		}
 	}
 }
 
@@ -150,14 +137,6 @@
 
 	.expandCollapseSection__4d95d {
 		margin: 0;
-
-		button {
-			--icon: icon("down");
-
-			&[aria-label^="Collapse"] {
-				--icon: icon("up");
-			}
-		}
 	}
 
 	.fileName__4d95d {
@@ -180,12 +159,6 @@
 			@include controls.icon-button;
 
 			margin: 0;
-
-			// Used as a popover anchor
-			svg {
-				visibility: hidden;
-				display: block;
-			}
 		}
 	}
 
@@ -193,18 +166,10 @@
 		display: none;
 	}
 
-	.languageIcon__4d95d {
-		--icon: icon("lang-include");
-	}
-
 	.nameSection__4d95d {
 		margin-inline-end: auto;
 
 		order: -1;
-	}
-
-	.openFullPreviewSection__4d95d {
-		--icon: icon("view-fullscreen");
 	}
 
 	.modalTextContainer__4d95d,
@@ -316,7 +281,6 @@
 	// Video actions
 	.wrapper__926d7 {
 		--icon-button-size: calc(34px * 2);
-		--icon-size: calc(16px * 2);
 
 		background-color: transparent;
 		gap: var(--spacing);
@@ -328,10 +292,6 @@
 			@include controls.icon-button-circular("play");
 
 			opacity: 1;
-
-			&.anchor_edefb8 {
-				--icon: icon("external-link");
-			}
 		}
 	}
 }
@@ -397,10 +357,6 @@
 		&:hover {
 			color: white;
 		}
-
-		&.removeMosaicItemHoverButton__6c706 {
-			--icon: icon("window-close");
-		}
 	}
 }
 
@@ -447,7 +403,6 @@
 // Video play button
 .iconWrapper__6eb54 {
 	--icon-button-size: calc(34px * 2);
-	--icon-size: calc(16px * 2);
 
 	@include controls.icon-button-circular("play");
 
@@ -457,10 +412,6 @@
 .imageAccessory_af017a {
 	.gifFavoriteButton__43deb {
 		@include controls.icon-button-circular("star-outline-rounded");
-
-		&.selected__43deb {
-			--icon: icon("star-large");
-		}
 	}
 }
 
@@ -531,17 +482,7 @@
 	}
 
 	.audioMetadata_cf09d8 {
-		--icon-size: 48px;
-
 		align-items: center;
-
-		&::before {
-			background-image: icon("audio-x-generic", "other");
-			filter: var(--text-shadow);
-
-			width: var(--icon-size);
-			height: var(--icon-size);
-		}
 	}
 
 	.metadataContent_cf09d8 {

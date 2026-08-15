@@ -1,6 +1,5 @@
 @use "controls";
 @use "typography";
-@use "util";
 
 .vc-addon-card {
 	@include controls.card-in-container(
@@ -27,8 +26,6 @@
 
 // Merged with the top card
 .vc-plugin-ui-elements-button {
-	--icon: icon("right");
-
 	@include controls.card-button-pseudo;
 
 	border-radius: 0 0 var(--card_radius) var(--card_radius);
@@ -82,10 +79,6 @@
 
 .vc-plugins-info-icon {
 	color: var(--card_fg_color);
-
-	&.vc-cog-wheel {
-		--icon: icon("settings");
-	}
 }
 
 .vc-plugins-restart-button {
@@ -108,7 +101,6 @@
 
 .vc-settings-quickActions-img {
 	// The GitHub link doesn't have a distinguishing class name
-	--icon: icon("external-link");
 
 	margin-left: auto;
 	margin-right: calc((var(--icon-button-size) - var(--icon-size)) / 2);
