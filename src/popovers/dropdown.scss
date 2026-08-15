@@ -1,5 +1,4 @@
 @use "popover";
-@use "util";
 
 .listBox__2e223 {
 	padding: 0;
@@ -23,14 +22,8 @@
 }
 
 .selectedIcon__2e223 {
-	@include util.icon("check-plain");
-
 	// Align with the item height
 	margin: var(--space-12) var(--menu_padding);
 
 	min-width: unset;
-
-	* {
-		display: none;
-	}
 }

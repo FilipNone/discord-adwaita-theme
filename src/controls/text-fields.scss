@@ -1,5 +1,4 @@
 @use "controls";
-@use "util";
 
 .container__75098 {
 	@include controls.text-field;
@@ -26,8 +25,6 @@
 
 .icon__75098 {
 	&:not(.button__75098) {
-		@include util.icon("loupe-large");
-
 		border: none;
 		margin-inline-start: 9px;
 	}

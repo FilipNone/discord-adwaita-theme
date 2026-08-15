@@ -116,9 +116,6 @@ $toast_fg_color: white;
 }
 
 @mixin icon-button($name: null, $size: null) {
-	@if $name {
-		--icon: icon(#{$name});
-	}
 	@if $size {
 		--icon-button-size: #{$size};
 	}
@@ -137,21 +134,6 @@ $toast_fg_color: white;
 	&:disabled {
 		opacity: var(--dim-level-opacity);
 		background-color: transparent;
-	}
-
-	&::before {
-		content: "";
-
-		@include util.icon;
-
-		position: absolute;
-		inset: 0;
-		width: 100%;
-		height: 100%;
-	}
-
-	& > * {
-		display: none;
 	}
 }
 
@@ -180,7 +162,7 @@ $toast_fg_color: white;
 }
 
 @mixin icon-button-with-tooltip(
-	$name,
+	$name: null,
 	$direction,
 	$size: null,
 	$selector: "&:hover > *",
@@ -350,8 +332,6 @@ $toast_fg_color: white;
 	}
 
 	#{$rhs} {
-		--icon: icon("pan-down");
-
 		padding-left: 5px;
 		padding-right: 5px;
 
@@ -602,16 +582,13 @@ $toast_fg_color: white;
 @mixin card-button-pseudo {
 	position: relative;
 
-	&::before,
-	&::after {
+	&::before {
 		content: "";
 
 		position: absolute;
 		// horizontal card padding
 		right: 16px;
-	}
 
-	&::before {
 		transition: var(--button_transition);
 		border-radius: var(--button_radius);
 
@@ -625,14 +602,6 @@ $toast_fg_color: white;
 
 	&:active::before {
 		background-color: var(--selected_active_color);
-	}
-
-	&::after {
-		display: block;
-
-		@include util.icon;
-
-		margin: calc(var(--spacing) * 1.5);
 	}
 }
 

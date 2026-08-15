@@ -44,11 +44,6 @@
 			width: calc(var(--size) * 1.25);
 		}
 	}
-
-	// Experiments vencord plugin
-	[aria-label="Help"] {
-		--icon: icon("menu");
-	}
 }
 
 .children__9293f {
@@ -144,10 +139,6 @@
 
 	.search_c322aa.open_c322aa & {
 		@include controls.button-selected;
-	}
-
-	&.pointer__0c4c4 {
-		--icon: icon("window-close");
 	}
 
 	// tooltip, the theme is english only anyway lol

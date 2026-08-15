@@ -9,15 +9,6 @@
 
 	&.hasColorGlow__5e764 {
 		color: var(--destructive-color);
-
-		// aria-label stays the same, bug ?
-		&:nth-child(1) .audioButtonWithMenu__5e764 {
-			--icon: icon("mic-none");
-		}
-
-		&:nth-child(2) .audioButtonWithMenu__5e764 {
-			--icon: icon("headphones-muted");
-		}
 	}
 
 	.button__67645 {
@@ -38,20 +29,6 @@
 	margin: 0;
 
 	// TODO: remove when it gets aria-labels again (fucking never)
-	.button_e131a9 {
-		$-icons: (
-			1: "camera-disabled",
-			3: "record-screen",
-			5: "emoji-activities",
-			7: "bullhorn",
-		);
-
-		@each $k, $v in $-icons {
-			&:nth-child(#{$k}) {
-				--icon: icon(#{$v});
-			}
-		}
-	}
 }
 
 .panels__5e434 {
@@ -68,7 +45,6 @@
 	width: calc(
 		var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - 1px
 	);
-	--icon: icon("bullhorn");
 
 	.custom-theme-background & {
 		background: none;
@@ -131,17 +107,14 @@
 	height: unset;
 
 	&.rtcConnectionQualityFine__06d62 {
-		--icon: icon("radiowaves-1");
 		--text-color: var(--success-color);
 	}
 
 	&.rtcConnectionQualityAverage__06d62 {
-		--icon: icon("radiowaves-2");
 		--text-color: var(--warning-color);
 	}
 
 	&.rtcConnectionQualityBad__06d62 {
-		--icon: icon("radiowaves-3");
 		--text-color: var(--destructive-color);
 	}
 
@@ -161,6 +134,3 @@
 
 // There are only 2 buttons and 1 of them has a constant aria-label, the other
 // doesn't
-.voiceButtonsContainer_e131a9 {
-	--icon: icon("sound-wave");
-}

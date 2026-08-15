@@ -1,18 +1,11 @@
 @use "controls";
 @use "popover";
 @use "typography";
-@use "util";
 
 .caret_c1e9c4 {
-	@include util.icon("right");
-
 	color: var(--window_fg_muted);
 	inset-inline-start: unset;
 	inset-inline-end: var(--menu_padding);
-
-	path {
-		display: none;
-	}
 }
 
 .customItem_c1e9c4 {
@@ -33,20 +26,6 @@
 	:where(& > *) {
 		inset-inline-start: var(--menu_padding);
 		position: absolute;
-	}
-
-	.checkboxIndicator__714a9 {
-		display: none;
-	}
-
-	.checkboxOption__714a9 {
-		&[data-selected="true"] {
-			@include util.icon("check-plain");
-		}
-	}
-
-	.standaloneRadioIndicator__64e61 {
-		margin-inline-start: -4px;
 	}
 }
 
@@ -161,14 +140,8 @@
 
 #switch-accounts-submenu {
 	.activeIcon_d40c56 {
-		@include util.icon("check-plain");
-
 		position: absolute;
 		right: var(--menu_padding);
-
-		* {
-			display: none;
-		}
 	}
 
 	.userMenuText_d40c56 {

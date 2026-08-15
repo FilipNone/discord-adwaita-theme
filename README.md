@@ -1,6 +1,6 @@
-# Discord GNOME Theme
+# Discord Adwaita Theme
 
-A GNOME theme for Discord, following the Adwaita style & GNOME Human Interface Guidelines (with whatever the Discord CSS lets me do).
+A GNOME theme for Discord, following the Adwaita style & GNOME Human Interface Guidelines (with whatever the Discord CSS lets me do). Uses Discord's native icons rather than custom inlined ones.
 
 <picture>
 	<source srcset="assets/preview/theme-dark.png" media="(prefers-color-scheme: dark)">
@@ -10,33 +10,30 @@ A GNOME theme for Discord, following the Adwaita style & GNOME Human Interface G
 
 ## Requirements
 
-1. Vesktop
+1. Vesktop or Vencord/BetterDiscord
 
-   Recommended for enabling the Discord's custom titlebar. Enable with Settings > Vesktop Settings > "Discord Titlebar".
-
-   You can still use something else like BetterDiscord - the theme will work but without the usual GNOME headerbar and with BetterDiscord content unthemed.
+   The theme targets Discord's web app, so it works with Vesktop, Vencord, or
+   BetterDiscord. It no longer ships a custom GNOME titlebar, so the Discord
+   titlebar behaves like a normal (non-GNOME) window header.
 
 2. Install [Discord Adblock][adblock]
 
    Removes Nitro elements, as they will look out of place.
-
-3. Settings > Language > Choose "English (US)"
-
-   This allows for custom icons due to how they are identified in Discord. You may [localize][css-icons] the theme, but read the localization note.
-
-4. Settings > Plugins > Enable "ThemeAttributes"
-
-   This allows for icons in the server settings modal. Optional, does not affect user settings.
 
 ## Installation
 
 Copy the following into the text box located in Settings > Themes > Online Themes:
 
 ```
-https://raw.githubusercontent.com/ricewind012/discord-gnome-theme/master/gnome.theme.css
+https://raw.githubusercontent.com/FilipNone/discord-adwaita-theme/master/gnome.theme.css
 ```
 
-If you'd like to configure it, put [gnome.theme.css][css-main] in `~/.config/vesktop/themes`. It's still updated automatically.
+If you'd like to configure it, put [gnome.theme.css][css-main] in
+`~/.config/vesktop/themes`. It's still updated automatically.
+
+ThemeAttributes is no longer required: the theme uses Discord's built-in icons,
+so the custom (English-only) icon mappings and the settings sidebar icon
+overrides have been removed.
 
 ## Configuration
 
@@ -86,7 +83,6 @@ Settings used for the screenshot were: radius - 100, brightness - 1.00.
   Exceptions — anything accessible with the FakeNitro plugin; it does support nitro themes after all.
 
 [adblock]: https://codeberg.org/ridge/Discord-AdBlock
-[css-icons]: ./src/global/icons.scss
 [css-main]: ./gnome.theme.css
 [ext-blur-my-shell]: https://github.com/aunetx/blur-my-shell
 [ext-rounded-window-corners]: https://github.com/flexagoon/rounded-window-corners

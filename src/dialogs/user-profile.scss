@@ -1,6 +1,5 @@
 @use "controls";
 @use "typography";
-@use "util";
 
 .backgroundImage__9c3be {
 	--brightness: 1.5;
@@ -121,22 +120,6 @@
 			border-radius: var(--button_radius);
 
 			pointer-events: all;
-		}
-
-		&::after {
-			content: "";
-
-			--icon: icon("external-link");
-
-			background-color: currentColor;
-			mask: var(--icon);
-			mask-position: center;
-			mask-repeat: no-repeat;
-			mask-size: var(--icon-size);
-
-			display: flex;
-			align-items: center;
-			justify-content: center;
 		}
 	}
 

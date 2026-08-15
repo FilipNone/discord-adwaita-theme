@@ -1,6 +1,5 @@
 @use "controls";
 @use "typography";
-@use "util";
 
 [role="tab"] {
 	@include controls.button;

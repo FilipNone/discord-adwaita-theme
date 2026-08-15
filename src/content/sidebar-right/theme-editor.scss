@@ -2,8 +2,6 @@
 @use "typography";
 
 .closeCircleButton_cf6da1 {
-	--icon: icon("window-close");
-
 	@include controls.titlebar-button;
 
 	inset: 0;

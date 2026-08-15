@@ -5,7 +5,7 @@
 	gap: var(--spacing) var(--spacing-2x);
 
 	.emojiButton__04eed {
-		@include controls.icon-button("emoji-people");
+		@include controls.icon-button;
 	}
 }
 

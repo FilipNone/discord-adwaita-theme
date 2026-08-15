@@ -1,6 +1,5 @@
 @use "controls";
 @use "typography";
-@use "util";
 
 .sidebar__5e434 {
 	background: none;
@@ -55,24 +54,12 @@
 
 // Header
 .wrapperCommon__29444 {
-	--icon: icon("pan-down");
-
-	&.collapsed__29444 {
-		--icon: icon("pan-up");
-	}
-
 	&:not(:hover) {
 		color: var(--window_fg_muted);
 	}
 
 	.icon__29444 {
-		@include util.icon;
-
 		transform: none;
-
-		path {
-			display: none;
-		}
 	}
 
 	.mainContent__29444 {
@@ -105,11 +92,6 @@
 
 .icon__2ea32 {
 	display: none;
-}
-
-:where(.iconContainer__2ea32) {
-	// Align with Discord
-	@include util.icon("lang-include");
 }
 
 .link__2ea32 {

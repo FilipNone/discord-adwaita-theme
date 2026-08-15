@@ -1,9 +1,6 @@
 @use "controls";
-@use "util";
 
 .chevronButton__0edde {
-	@include util.icon("pan-down");
-
 	padding: 0;
 }
 

@@ -30,18 +30,11 @@
 }
 
 .controls__06f80 {
-	// for the ONLY mana icon button there
-	--icon: icon("funnel");
-
 	gap: var(--spacing);
 
 	[role="button"]:not(.focusTarget__54e4b) {
 		@include controls.icon-button;
 	}
-}
-
-.friendRequestsButton__523aa {
-	--icon: icon("person");
 }
 
 .header__06f80 {

@@ -1,6 +1,5 @@
 @use "controls";
 @use "typography";
-@use "util";
 
 .contentBody_e9e3ed {
 	display: flex;
@@ -29,8 +28,6 @@
 		flex-grow: 1;
 
 		& > button {
-			--icon: icon("left");
-
 			@include controls.icon-button;
 		}
 	}
@@ -169,16 +166,6 @@
 
 				&:active {
 					background-color: color-mix(in srgb, currentColor 19%, transparent);
-				}
-			}
-
-			svg {
-				@include util.icon;
-
-				display: inline-block;
-
-				* {
-					display: none;
 				}
 			}
 		}

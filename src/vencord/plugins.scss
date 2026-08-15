@@ -1,14 +1,8 @@
 @use "controls";
 
-// CopyFileContents
-.vc-cfc-button {
-	--icon: icon("edit-copy");
-}
-
 // ReadAllNotificationsButton
 .vc-ranb-button {
 	@include controls.icon-button-with-tooltip(
-		$name: "check-plain",
 		$selector: "&:hover::after",
 		$size: var(--guildbar-avatar-size),
 		$direction: "right"

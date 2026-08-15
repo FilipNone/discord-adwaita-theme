@@ -1,6 +1,5 @@
 @use "controls";
 @use "typography";
-@use "util";
 
 @mixin -role-button($icon) {
 	@include controls.icon-button($icon, var(--role-height));
@@ -65,13 +64,7 @@
 }
 
 .menuItem_ce8328 {
-	--icon: icon("right");
-
 	.menuOverlay_ce8328:first-child & {
-		&:first-child {
-			--icon: icon("edit");
-		}
-
 		&:nth-child(2) > .menuItemInner_ce8328 {
 			// awful
 			$colors: (
@@ -91,10 +84,6 @@
 				}
 			}
 		}
-	}
-
-	.menuOverlay_ce8328:nth-child(2) &:nth-child(2) {
-		--icon: icon("edit-copy");
 	}
 
 	&::after {
@@ -185,8 +174,6 @@
 }
 
 .roleCircle__4f569 {
-	--icon: icon("window-close");
-
 	border-radius: 999px;
 	margin: 0;
 	margin-left: var(--spacing-2x);
@@ -200,8 +187,6 @@
 
 		position: absolute;
 		inset: 0;
-
-		@include util.icon;
 	}
 
 	&::after {
