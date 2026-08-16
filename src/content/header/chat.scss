@@ -155,9 +155,6 @@
 
 .search__49676 {
 	margin: 0 var(--spacing);
-
-	position: absolute;
-	left: 0;
 }
 
 .search_c322aa {
@@ -201,6 +198,14 @@
 
 	width: var(--icon-button-size);
 	height: unset;
+}
+
+.searchBar_c322aa .button_a22cb0 {
+	@include controls.icon-button;
+
+	[data-text-variant] {
+		display: none;
+	}
 }
 
 .title__9293f {
